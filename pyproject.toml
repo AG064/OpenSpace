@@ -62,8 +62,9 @@ all = [
 ]
 
 [project.urls]
-Repository = "https://github.com/HKUDS/OpenSpace"
-"Bug Tracker" = "https://github.com/HKUDS/OpenSpace/issues"
+Repository = "https://github.com/AG064/OpenSpace"
+"Bug Tracker" = "https://github.com/AG064/OpenSpace/issues"
+Upstream = "https://github.com/HKUDS/OpenSpace"
 
 [project.scripts]
 openspace = "openspace.__main__:run_main"

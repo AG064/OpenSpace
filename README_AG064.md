@@ -18,7 +18,11 @@ export OPENSPACE_MODEL='minimax/MiniMax-M2.7'
 ### 2. Install
 
 ```bash
-pip install git+https://github.com/AG064/OpenSpace.git --no-deps --break-system-packages
+python -m venv .venv
+# Linux/macOS: source .venv/bin/activate
+# Windows PowerShell: .venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install .
 ```
 
 ### 3. Test
@@ -50,7 +54,11 @@ openspace --model minimax/MiniMax-M2.7 --query "Your task"
 | `OPENSPACE_MODEL` | OpenSpace LLM model (minimax/MiniMax-M2.7) |
 | `LITELLM_ENDPOINT` | Custom LLM endpoint (for local models) |
 
-## AG-Claw Integration
+## Historical AG-Claw integration
+
+The following TypeScript integration belongs to the older AG-Claw code. Argentum's
+Genesis rewrite is a separate Rust workspace; this integration does not establish
+compatibility with Genesis.
 
 See: [AG064/ag-claw](https://github.com/AG064/ag-claw) → `src/features/skill-evolution/`
 
